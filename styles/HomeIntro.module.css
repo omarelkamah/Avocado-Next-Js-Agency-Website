@@ -1,0 +1,44 @@
+.homeIntro {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+  flex: 1;
+  padding: 100px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.theBrand {
+  color: green;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.button {
+  width: fit-content;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}

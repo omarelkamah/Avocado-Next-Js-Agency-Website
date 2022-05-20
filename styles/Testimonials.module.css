@@ -1,0 +1,45 @@
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.testiHeading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.usersContainer {
+  display: flex;
+  margin-top: 100px;
+}
+
+/* .testiUser {
+  position: relative;
+} */
+
+.imgContainer {
+  margin-right: 30px;
+}
+
+.userComment {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.userDetails > span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

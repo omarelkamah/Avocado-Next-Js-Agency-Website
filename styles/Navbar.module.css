@@ -1,0 +1,22 @@
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 60px;
+}
+
+.logo {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.listItem {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+}
