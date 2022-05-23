@@ -1,8 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Navbar.module.css'
+import Menue from './Menue'
 
 const Navbar = () => {
+  const [openMenue, setOpenMenue] = useState(false)
+
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
@@ -25,6 +28,12 @@ const Navbar = () => {
           <Link href='/contact'>contact</Link>
         </li>
       </ul>
+      <div className={styles.icon} onClick={() => setOpenMenue(!openMenue)}>
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
+      </div>
+      <Menue openMenue={openMenue} setOpenMenue={setOpenMenue} />
     </div>
   )
 }

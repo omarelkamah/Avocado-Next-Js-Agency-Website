@@ -10,7 +10,7 @@ const Services = ({ services }) => {
       <p className={styles.description}>Services We Can Help You With</p>
       <div className={styles.servicesContainer}>
         {services.map(service => (
-          <Link key={service.kna} href={`/products/${service.name}`}>
+          <Link key={service.id} href={`/products/${service.name}`}>
             <div className={styles.service}>
               <span className={styles.serviceName}>{service.name}</span>
               <p className={styles.serviceDesc}>{service.desc}</p>
