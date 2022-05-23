@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.cardLarge}>
           <h3 className={styles.footerTitle}>avocado creatives</h3>
-          <Link href='/'>
+          <Link href='/contact'>
             <div className={styles.footerLink}>
               work with us
               <Image

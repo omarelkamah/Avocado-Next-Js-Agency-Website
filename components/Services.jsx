@@ -10,19 +10,19 @@ const Services = ({ services }) => {
       <p className={styles.description}>Services We Can Help You With</p>
       <div className={styles.servicesContainer}>
         {services.map(service => (
-          <Link key={service.id} href={`/services/${service.name}`}>
+          <Link key={service.kna} href={`/products/${service.name}`}>
             <div className={styles.service}>
               <span className={styles.serviceName}>{service.name}</span>
               <p className={styles.serviceDesc}>{service.desc}</p>
               {service.video ? (
                 // <video />
                 <div className={styles.media}>
-                  <Image
-                    width='100%'
-                    height='100%'
+                  <video
                     objectFit='cover'
-                    layout='responsive'
-                    src='/img/dev.jpeg'
+                    layout='fill'
+                    autoPlay
+                    loop
+                    src={`/img/${service.video}`}
                     alt={service.name}
                   />
                 </div>
@@ -33,7 +33,7 @@ const Services = ({ services }) => {
                     height='100%'
                     layout='responsive'
                     objectFit='cover'
-                    src='/img/dev.jpeg'
+                    src={`/img/${service.photo}`}
                     alt={service.name}
                   />
                 </div>

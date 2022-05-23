@@ -1,0 +1,67 @@
+.product {
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .product {
+    padding: 50px 20px;
+  }
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.cardLarge {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  width: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  width: 30%;
+  height: 40vh;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.imageContainer:nth-child(3) {
+  border-top-right-radius: 50%;
+}
+
+.cardSmall {
+  flex: 1;
+}
+
+.productTitle {
+  text-transform: capitalize;
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.productDescription {
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.button {
+  border: none;
+  background: green;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}

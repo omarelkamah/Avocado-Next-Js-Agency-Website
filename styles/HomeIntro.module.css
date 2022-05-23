@@ -16,6 +16,21 @@
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .section:last-of-type {
+    display: none;
+  }
+
+  .button {
+    margin: auto;
+  }
+}
+
 .heading {
   text-transform: uppercase;
   font-size: 3rem;

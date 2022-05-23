@@ -7,6 +7,16 @@
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .cardSmall {
+    margin-top: 20px;
+  }
+}
+
 .cardLarge {
   flex: 2;
 }
