@@ -6,7 +6,6 @@ import styles from '../../styles/Product.module.css'
 import Head from 'next/head'
 
 const Product = ({ product }) => {
-  console.log(product)
   return (
     <div className={styles.product}>
       <Head>

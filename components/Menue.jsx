@@ -3,7 +3,6 @@ import Link from 'next/link'
 import styles from '../styles/Menue.module.css'
 
 const Menue = ({ openMenue, setOpenMenue }) => {
-  console.log(openMenue)
   return (
     <ul
       className={styles.menue}

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styles from '../styles/HomeIntro.module.css'
 import Circle from './Circle'
+import Link from 'next/link'
 
 const HomeIntro = () => {
   return (
@@ -17,7 +18,9 @@ const HomeIntro = () => {
           Create live segments and target the right people for messages based on
           their behaviors.
         </p>
-        <button className={styles.button}>discover</button>
+        <Link href='/products/design'>
+          <button className={styles.button}>discover</button>
+        </Link>
       </div>
       <div className={styles.section}>
         <Image
